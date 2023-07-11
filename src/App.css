@@ -1,31 +1,4 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-
-
-/* my styles for app */
 .appStyle {
   border: 2px solid black;
   padding: 10px;
@@ -105,7 +78,7 @@
 
 .employeeCardStyle {
   border: 2px solid gray;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-bottom: 10px;
 }
 

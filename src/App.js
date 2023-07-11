@@ -5,6 +5,65 @@ import employeesData from './employeesData.json';
 import './App.css';
 
 
+/* for this demo, function will display info for employee 10001 */
+function buildEmployeePage() {
+  const employee = employeesData.find((employee) => employee.employeeId === "10001");
+
+  if (!employee) {
+    return null; // employee not found
+  }
+
+  const { name, position, callOffice, callMobile, sms, email } = employee;
+
+  return (
+    <div className="employeePageStyle">
+      <div className="headerStyle">
+        <h2>Employee</h2>
+      </div>
+
+      <div className="employeeCardStyle">
+        <div className="employeeCardHeader">
+          <div className="avatarStyle employeeAvatarStyle"></div>
+          <div>
+            <div className="nameStyle">{name}</div>
+            <div className="positionStyle">{position}</div>
+          </div>
+        </div>
+
+        {callOffice && (
+          <div className="employeeCardDetail">
+            <div className="employeeCardDetailHeader">Call Office</div>
+            <div className="employeeCardDetailText">{callOffice}</div>
+          </div>
+        )}
+
+        {callMobile && (
+          <div className="employeeCardDetail">
+            <div className="employeeCardDetailHeader">Call Mobile</div>
+            <div className="employeeCardDetailText">{callMobile}</div>
+          </div>
+        )}
+
+        {sms && (
+          <div className="employeeCardDetail">
+            <div className="employeeCardDetailHeader">SMS</div>
+            <div className="employeeCardDetailText">{sms}</div>
+          </div>
+        )}
+
+        {email && (
+          <div className="employeeCardDetail">
+            <div className="employeeCardDetailHeader">Email</div>
+            <div className="employeeCardDetailText">{email}</div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+
+
 function App() {
 
 
@@ -23,46 +82,6 @@ function App() {
     ));
   };
 
-
-  const buildEmployeePage = () => {
-    return (
-      <div className="employeePageStyle">
-        <div className="headerStyle">
-          <h2>Employee</h2>
-        </div>
-
-        <div className="employeeCardStyle">
-          <div className="employeeCardHeader">
-            <div className="avatarStyle employeeAvatarStyle"></div>
-            <div>
-              <div className="nameStyle">Julie Taylor</div>
-              <div className="positionStyle">VP of Marketing</div>
-            </div>
-          </div>
-
-          <div className="employeeCardDetail">
-            <div className="employeeCardDetailHeader">Call Office</div>
-            <div className="employeeCardDetailText">781-000-0002</div>
-          </div>
-
-          <div className="employeeCardDetail">
-            <div className="employeeCardDetailHeader">Call Mobile</div>
-            <div className="employeeCardDetailText">617-000-0002</div>
-          </div>
-
-          <div className="employeeCardDetail">
-            <div className="employeeCardDetailHeader">SMS</div>
-            <div className="employeeCardDetailText">617-000-0002</div>
-          </div>
-
-          <div className="employeeCardDetail">
-            <div className="employeeCardDetailHeader">Email</div>
-            <div className="employeeCardDetailText">jtaylor@fakemail.com</div>
-          </div>
-        </div>
-      </div>
-    );
-  };
 
 
   return (
