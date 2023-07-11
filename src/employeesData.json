@@ -1,0 +1,36 @@
+[
+    {
+        "employeeId": "10000",
+        "name": "James King",
+        "position": "President and CEO"
+    },
+    {
+        "employeeId": "10001",
+        "name": "Julie Taylor",
+        "position": "VP of Marketing",
+        "callOffice": "781-000-0002",
+        "callMobile": "617-000-0002",
+        "sms": "617-000-0002",
+        "email": "jtaylor@fakemail.com"
+    },
+    {
+        "employeeId": "10002",
+        "name": "Eugene Lee",
+        "position": "CFO"
+    },
+    {
+        "employeeId": "10003",
+        "name": "John Williams",
+        "position": "VP of Engineering"
+    },
+    {
+        "employeeId": "10004",
+        "name": "Ray Moore",
+        "position": "VP of Sales"
+    },
+    {
+        "employeeId": "10005",
+        "name": "Paul Jones",
+        "position": "QA Manager"
+    }
+]

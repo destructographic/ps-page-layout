@@ -7,11 +7,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -28,11 +23,125 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+/* my styles for app */
+.appStyle {
+  border: 2px solid black;
+  padding: 10px;
+  display: flex;
+  height: auto;
 }
+
+
+.homePageStyle {
+  border: 2px solid gold;
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.employeePageStyle {
+  border: 2px solid brown;
+  flex: 1;
+  padding: 10px;
+}
+
+.headerStyle {
+  border: 2px solid #3366ff;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.searchBarStyle {
+  border: 2px solid green;
+  width: calc(100% - 10px - 10px - 4px);
+  border-radius: 0;
+  padding: 10px;
+}
+
+.inputStyle {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+.employeeListStyle {
+  list-style-type: none;
+  padding: 10px;
+  border: 2px solid magenta;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.employeeListItemStyle {
+  display: flex;
+  align-items: center;
+  border: 2px solid red;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.avatarStyle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: lightgray;
+}
+
+.nameStyle {
+  font-weight: bold;
+}
+
+.positionStyle {
+  color: gray;
+}
+
+.employeeCardStyle {
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.employeeAvatarStyle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: lightgray;
+}
+
+.employeeDetailHeaderStyle {
+  font-weight: bold;
+}
+
+.employeeDetailTextStyle {
+  color: gray;
+}
+
+.employeeCardHeader {
+  display: flex;
+  padding: 10px;
+}
+
+.employeeCardDetail {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-top: 1px solid gray; 
+}
+
+.employeeCardDetailHeader {
+  font-weight: bold;
+}
+
+.employeeCardDetailText {
+  color: gray;
+}
+
